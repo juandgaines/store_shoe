@@ -31,14 +31,6 @@ class ShoesListFragment : Fragment() {
 
         })
 
-        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
-            if(activityViewModel.isOnBoardingCompleted.value!!){
-                activity?.findNavController(R.id.myNavHostFragment)?.navigateUp()
-            }
-        }
-
-        requireActivity().onBackPressedDispatcher.addCallback(this,callback)
-
 
         binding.addButton.setOnClickListener {
             activity?.findNavController(R.id.myNavHostFragment)
