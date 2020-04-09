@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.shoesListFragment
             )
         )
-
         databinding.toolbar.setupWithNavController(navController, appBarConfiguration)
 
         activityViewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)

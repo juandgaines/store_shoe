@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.databinding.FragmentShoesListBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -21,7 +22,7 @@ class ShoeDetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: FragmentShoesListBinding =
+        val binding: FragmentShoeDetailBinding =
             DataBindingUtil.inflate(inflater,R.layout.fragment_shoe_detail, container, false)
         return binding.root
     }
